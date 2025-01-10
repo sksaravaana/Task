@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Times - Newspaper</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    header p {
+      font-style: italic;
+      margin: 5px 0;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: #444;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .featured-article {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .featured-article img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .featured-article div {
+      flex: 1;
+    }
+
+    .featured-article h2 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    /* News Sections */
+    .news-section {
+      margin-bottom: 40px;
+    }
+
+    .news-section h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      color: #555;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .news-item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .news-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .news-item h3 {
+      margin: 10px;
+      font-size: 1.5em;
+      color: #444;
+    }
+
+    .news-item p {
+      margin: 0 10px 10px;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daily Times</h1>
+    <p>Your trusted source for the latest news</p>
+  </header>
+
+  <nav>
+    <a href="#world">World</a>
+    <a href="#sports">Sports</a>
+    <a href="#tech">Tech</a>
+    <a href="#entertainment">Entertainment</a>
+  </nav>
+
+  <div class="container">
+    <!-- Featured Article -->
+    <div class="featured-article">
+      <img src="https://via.placeholder.com/300" alt="Featured">
+      <div>
+        <h2>Breaking News: Major Event Shakes the World</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <p><a href="#">Read More...</a></p>
+      </div>
+    </div>
+
+    <!-- News Sections -->
+    <div id="world" class="news-section">
+      <h2>World News</h2>
+      <div class="news-grid">
+        <div class="news-item">
+          <img src="https://via.placeholder.com/300" alt="World News">
+          <h3>Global Summit on Climate Change</h3>
+          <p>Leaders from around the world gather to discuss environmental issues...</p>
+        </div>
+        <div class="news-item">
+          <img src="https://via.placeholder.com/300" alt="World News">
+          <h3>Historic Peace Treaty Signed</h3>
+          <p>A major step forward in international diplomacy...</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="sports" class="news-section">
+      <h2>Sports</h2>
+      <div class="news-grid">
+        <div class="news-item">
+          <img src="https://via.placeholder.com/300" alt="Sports">
+          <h3>Championship Finals: Who Will Win?</h3>
+          <p>The final showdown is here. Get ready for an epic match...</p>
+        </div>
+        <div class="news-item">
+          <img src="https://via.placeholder.com/300" alt="Sports">
+          <h3>Star Player Breaks Records</h3>
+          <p>Unbelievable achievements by the league's top performer...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Daily Times. All rights reserved.</p>
+  </footer>
+</body>
+</html>
