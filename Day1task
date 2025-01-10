@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+
+    form fieldset {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    form legend {
+      padding: 0 10px;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input:focus {
+      border-color: #4CAF50;
+      outline: none;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application Form</h1>
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full_name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </fieldset>
+
+      <!-- Job Details -->
+      <fieldset>
+        <legend>Job Details</legend>
+        <label for="position">Position Applied For:</label>
+        <input type="text" id="position" name="position" required>
+
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" required>
+
+        <label for="portfolio">Portfolio Website (optional):</label>
+        <input type="url" id="portfolio" name="portfolio">
+      </fieldset>
+
+      <!-- Resume Upload -->
+      <fieldset>
+        <legend>Upload Resume</legend>
+        <label for="resume">Attach your resume (PDF/DOC):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
